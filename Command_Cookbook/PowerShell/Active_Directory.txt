@@ -1,0 +1,44 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2025-05-25T08:40:46-04:00
+
+====== Active Directory ======
+Created Sunday 25 May 2025
+
+== Install-WindowsFeature -name AD-Domain-Services –IncludeManagementTools ==
+
+* Installs Active Directory Domain Services
+
+== Install-ADDSDomainController -DomainName <"existingdomain.local”> -Credential (GetCredential) -Force:$true ==
+
+* Elevates computer to domain controller in current forest
+
+== Add-Computer -DomainName <USERID.LAB> -credential (Get-Credential) ==
+
+* Adds host to domain
+
+== **Enable-ADOptionalFeatures -Identity <object> -Scope <forest> -Target <domain>** ==
+
+* Can be used to enable features like AD recycle bin 
+
+== New-ADComputer -Name <name> ==
+
+* Used to create new active directory computers.
+
+== Get-ADComputer ==
+
+* Lists AD Computers
+
+== Get-ADObject ==
+
+* Lists AD objects
+
+== Get-ADGroup ==
+
+* Lists AD groups 
+
+== Get-computerInfo | select – Property csDomain ==
+
+* Displays configured domain
+
+

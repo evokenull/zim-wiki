@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2025-05-25T08:41:03-04:00
+
+====== Networking ======
+Created Sunday 25 May 2025
+
+== Set-DnsClientServerAddress ==
+
+* Assigns DNS server address
+
+== Get-NetAdapter //-IncludeHidden// -Name ==
+
+* Returns visible network adapters by default, can return hidden with flag. Can use name flag to specify adapter. 
+
+== New-NetIPAddress -InterfaceIndex <interface index> -IPAddress <ipv4 address> -PrefixLength <prefix length> -DefaultGateway <gateway> ==
+
+* Assigns a new IP address to the specified interface.
+
+
