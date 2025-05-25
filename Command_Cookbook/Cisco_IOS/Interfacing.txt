@@ -1,0 +1,27 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2025-05-25T09:22:44-04:00
+
+====== Interfacing ======
+Created Sunday 25 May 2025
+
+!! Interface configuration
+
+int g0/0/1 
+ip address 172.18.107.194 255.255.255.252
+no shutdown
+!!
+int g0/0/0 
+!!
+ip address 172.18.107.197 255.255.255.252 
+no shutdown
+!!
+!!
+int g0/0/2
+ip address 203.0.113.57 255.255.255.248
+no shutdown
+!!
+int loop0 
+ip address 172.18.107.201 255.255.255.255 
+no shutdown
+!!

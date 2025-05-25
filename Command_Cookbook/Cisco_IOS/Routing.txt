@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2025-05-25T09:23:22-04:00
+
+====== Routing ======
+Created Sunday 25 May 2025
+
+!! Routing configuration
+ip route 172.18.107.0 255.255.255.128 172.18.107.193
+ip route 172.18.107.128 255.255.255.192 172.18.107.196
+ip route 192.0.2.0 255.255.255.0 203.0.113.62
+!!

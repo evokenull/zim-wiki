@@ -1,0 +1,136 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2025-05-25T09:26:48-04:00
+
+====== W04 ======
+Created Sunday 25 May 2025
+
+!! Configuration for Router A 
+
+
+!! Basic config
+!!
+do clock set 17:00:00 may 29 2025
+!!
+hostname lawl0063-W04-RA 
+!!
+ip arp proxy disable 
+!!
+enable secret class
+!!
+ip domain-name 8315.ca
+!!
+username cisco secret class
+!!
+line console 0
+logging synchronous 
+!!
+line vty 0 15 
+!!
+login local 
+!!
+logging synchronous
+!!
+ip ssh version 2
+!! 
+crypto key generate rsa general-keys modulus 1024 
+!!
+
+!! Interface configuration
+
+int g0/0/1 
+ip address 172.18.107.194 255.255.255.252
+no shutdown
+!!
+int g0/0/0 
+!!
+ip address 172.18.107.197 255.255.255.252 
+no shutdown
+!!
+!!
+int g0/0/2
+ip address 203.0.113.57 255.255.255.248
+no shutdown
+!!
+int loop0 
+ip address 172.18.107.201 255.255.255.255 
+no shutdown
+!!
+
+!! Routing configuration
+ip route 172.18.107.0 255.255.255.128 172.18.107.193
+ip route 172.18.107.128 255.255.255.192 172.18.107.196
+ip route 192.0.2.0 255.255.255.0 203.0.113.62
+!!
+
+!! Copy this at end!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+!! RB configuration
+!! Basic config
+do clock set 17:00:00 may 29 2025
+!!
+hostname lawl0063-W04-RB
+!!
+ip arp proxy disable 
+!!
+enable secret class
+!!
+ip domain-name 8315.ca
+!!
+username cisco secret class
+!!
+line console 0
+logging synchronous 
+!!
+line vty 0 15 
+!!
+login local 
+!!
+logging synchronous
+!!
+ip ssh version 2
+!! 
+crypto key generate rsa general-keys modulus 1024 
+!!
+
+!! Interface configuration
+
+int g0/0/1 
+ip address 172.18.107.193 255.255.255.252
+no shutdown
+!!
+int g0/0/0 
+!!
+ip address 172.18.107.126 255.255.255.128
+no shutdown
+!!
+
+!! Routing configuration
+ip route 172.18.107.128 255.255.255.192 172.18.107.194
+!!
+ip route 172.18.107.196 255.255.255.252 172.18.107.194
+!!
+ip route 203.0.113.56 255.255.255.248 172.18.10.194
+!!
+ip route 203.0.113.56 255.255.255.248 172.18.107.194
+!!
+
+
+
+
+

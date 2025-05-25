@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2025-05-25T09:25:51-04:00
+
+====== Switch ======
+Created Sunday 25 May 2025
+
+!! Interface configuration
+
+!!
+int range g1/0/1-24
+!!
+no switchport
+!!
+int g1/0/24 
+!!
+ip address 172.18.107.129 255.255.255.192 
+!!
+int g1/0/1
+!! 
+ip address 172.18.107.198 255.255.255.252
+
+
+!! Copy this at end!

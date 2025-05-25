@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2025-05-25T09:22:38-04:00
+
+====== Cisco IOS ======
+Created Sunday 25 May 2025
+
