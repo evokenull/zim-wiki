@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2025-05-25T21:59:13-04:00
+
+====== Linux ======
+Created Sunday 25 May 2025
+
+== chown :new_group directory_name ==
+
+* Sets the owner group of the directory
+* Can be used to set owner
+
+== chmod 2XXX ==
+
+* Configures setgid/suid on the inode. 
+
+== su - <user> ==
+
+* Switches 
