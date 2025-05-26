@@ -13,7 +13,10 @@ Created Sunday 25 May 2025
 == chmod 2XXX ==
 
 * Configures setgid/suid on the inode. 
+* Indicated by an s in the permission bits.
 
 == su - <user> ==
 
-* Switches 
+* Switches user. 
+
+
